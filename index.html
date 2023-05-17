@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" onkeydown="pular()">
+<head>
+<script>
+function iniciar(){};
+function pular(){};
+function verificar(){};
+</script>
+<link href='style.css' rel='stylesheet'/>
+    <meta charset="UTF-8">
+    <title>Jogo</title>
+</head>
+
+
+<body>
+
+    <div class="instru">
+        <h1 style="margin-bottom: 15px;">Instruções</h1>
+        <h3>1. Aperte em iniciar para começar.</h3>
+        <h3>2. Para pular, pressione as teclas W, A, S ou D  no teclado.</h3>
+        <h3>3. Qualquer outra tecla pressionada também pulará.</h3>
+
+    </div>
+
+<div style="margin-top: 50px;">
+
+
+    <p>Pontuação atual: 
+        <span id="pontuacao"></span>
+    </p>
+    <br>
+    <p>Maior pontuação: 
+        <span id="maiorpontuacao">0</span>
+    </p>
+    <div class="game">
+
+        <div id="personagem"></div>
+
+        <div id="bloco"></div>
+
+    </div>
+    <h1 id="btn" onclick="this.style.display='none';iniciar()">
+      Iniciar
+    </h1>
+
+
+</div>
+
+<script src='script.js'></script>
+</body>
