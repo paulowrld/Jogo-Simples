@@ -1,7 +1,7 @@
-var btn       = document.getElementById("btn");
+var btn        = document.getElementById("btn");
 var personagem = document.getElementById("personagem");
-var bloco     = document.getElementById("bloco");
-var counter   = 0;
+var bloco      = document.getElementById("bloco");
+var counter    = 0;
 
 
 function pular()
@@ -31,9 +31,9 @@ function iniciar()
     {
 
         let personagemTop = parseInt(window.getComputedStyle(personagem).getPropertyValue("top"));
-        let blockLeft    = parseInt(window.getComputedStyle(bloco).getPropertyValue("left"));
+        let blocoLeft    = parseInt(window.getComputedStyle(bloco).getPropertyValue("left"));
 
-        if(blockLeft < 20 && blockLeft >- 20 && personagemTop >= 130)
+        if(blocoLeft < 20 && blocoLeft >- 20 && personagemTop >= 130)
         {
             morrer()
         }
